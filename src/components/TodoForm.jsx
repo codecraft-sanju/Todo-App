@@ -8,6 +8,9 @@ function TodoForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (todoText.length == 0) {
+      alert("Please Enter task!")
+    }
     if (todoText.trim()) {
       addTodo({ todo: todoText, priority });
       setTodoText('');
