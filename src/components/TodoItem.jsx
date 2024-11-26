@@ -20,7 +20,7 @@ function TodoItem({ todo }) {
         todo.completed ? 'bg-green-700' : 'bg-gray-900'
       } text-white backdrop-blur-md`}
     >
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 p-2">
         <input
           type="checkbox"
           checked={todo.completed}
@@ -28,7 +28,7 @@ function TodoItem({ todo }) {
           className="w-5 h-5 cursor-pointer accent-purple-500"
         />
         <span
-          className={`text-lg font-medium ${
+          className={`text-lg font-medium break-all ${
             todo.completed ? 'line-through text-gray-400' : ''
           }`}
         >
